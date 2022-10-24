@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #090a10 40%, #161b24);
+}
+.glitch
+{
+    width: 500px;
+    height: 400px;
+    background: url('../images/glitch-image.jpg');
+    background-size: cover;
+    animation: glitch 3.5s infinite steps(1);
+}
+@keyframes glitch
+{
+    0%, 100%
+    {
+        background: url('../images/glitch-image.jpg');
+        background-size: cover;
+    }
+    90%
+    {
+        background: url('../images/glitch-image-1666573384.png');
+        background-size: cover;
+        opacity: 1;
+    }
+    92.5%
+    {
+        background: url('../images/glitch-image-1666573380.png');
+        background-size: cover;
+        opacity: 1;
+    }
+    95%
+    {
+        background: url('../images/glitch-image-1666573373.png');
+        background-size: cover;
+        opacity: 0;
+    }
+    97.5%
+    {
+        background: url('../images/glitch-image-1666573364.png');
+        background-size: cover;
+        opacity: 1;
+    }
+}
